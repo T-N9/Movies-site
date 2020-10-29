@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import 'variables';
+@import 'animations';
+// font-family: 'Roboto', sans-serif;
+// font-family: 'Commissioner', sans-serif;
+*{
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    height: 500vh;
+}
+.m-heading-font{
+    font-family: 'Commissioner', sans-serif;
+}
+.m-fill-primary{
+    color: $m-primary-color;
+}
+
+.m-header{
+   position: absolute;
+   top: 0;
+   z-index: 2000;
+}
+.m-fom-logo{
+    font-size: 30px;
+}
+.m-navbar{
+    // background-color: $m-primary-color;
+    background-image: linear-gradient(to right, $m-soft-pc , $m-primary-color, $m-soft-pc);
+}
+.m-nav-link{
+    font-size: 18px;
+}
+.m-nav-item{
+    margin-right: 58px;
+}
+.m-home{
+    background-image: url(../img/IntoTheWild.svg);
+    // margin-top: 79px;
+    background-size: 100%;
+    background-position: 0px 10px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.m-home-left{
+    height: 100vh;
+}
+.m-home-right{
+    height: 100vh;
+    background-image: linear-gradient(to top, #6EB8DA 20%,#6EB8DA 30%, #B7DBF3 100%);
+    margin-top: -5px;
+    padding-right: 0px;
+    box-shadow: 7px 7px 6px #00000016;
+}
+.m-home-img{
+    margin-right: -5px;
+    // width: 475px;
+    // height: 465px;
+}
+.s-m-home-left{
+    margin-top: 60px;
+}
+.m-motto{
+    font-size: 25px;
+}
+.m-home-btn{
+    width: 171px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, $m-soft-pc , $m-primary-color);
+    background-color: $m-primary-color;
+    border-radius: 15px;
+    transition: 1s ease all;
+    cursor: pointer;
+    &:hover{
+        font-weight: bold;
+        background-image: linear-gradient(to right, $m-primary-color , $m-soft-pc);
+        transform: scale(1.03);
+        // background-color: $m-soft-pc;
+    }
+}
+.m-home-heading{
+    font-size: 50px;
+}
+
+.m-info-link{
+    position: absolute;
+    bottom: 20px;
+    left: 625px;
+    .info-link-icons{
+        margin-top: 30px;
+        font-size: 30px;
+        color: $m-primary-color;
+    }
+}
+.m-plot{
+    background-color: $m-secondary-color;
+}
+.m-plot-img{
+    border-radius: 184px;
+}
+.m-plot-heading{
+    font-size: 50px;
+}
+.m-plot-para{
+    text-indent: 50px;
+    text-align: justify;
+    font-size: 20px;
+}
+.m-casts::before{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000040;
+}
+.m-casts{
+    background-image: url(../img/casts.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -135px;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    
+}
+.m-casts-heading{
+    font-size: 50px;
+    text-shadow: 3px 5px 4px #000000;
+}
+.m-casts-img{
+    width: 210px;
+    height: 280px;
+    border: 2px solid $m-soft-pc;
+    border-radius: 5px;
+}
+.actor-name{
+    font-size: 28px;
+}
+.character.name{
+    font-size: 23px;
+}
+.casts-card{
+    background-color: #00000050;
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+.casts-mb{
+    margin-bottom: 50px;
+}
+.anti-link{
+    &:hover{
+        text-decoration: none;
+    }
+}
+.casts-adj{
+    display: flex;
+    justify-content: center;
+}
+.slick-slide{
+    &:focus{
+        outline-color: $m-primary-color;
+    }
+    &:active{
+        outline: none !important;
+        border: none !important;
+    }
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+        width: 8px !important;
+        height: 8px !important;
+        background-color: transparent;
+        border: 2px solid $m-soft-pc;
+        border-radius: 50%;
+
+        
+    }
+    li.slick-active{
+        width: 15px !important;
+        height: 15px !important;
+        background-color: $m-soft-pc !important;
+    }
+}
+@import 'responsive';

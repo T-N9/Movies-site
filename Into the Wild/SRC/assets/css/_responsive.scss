@@ -1,0 +1,36 @@
+@media screen and (max-width:1200px){
+    
+}
+@media screen and (max-width:992px){
+    
+}
+@media screen and (max-width:768px){
+    .m-home{
+        background-size: 242%;
+        background-position: -675px 24px;
+    }
+    .m-info-link{
+        bottom: 590px;
+        left: 690px;
+    }
+    .m-home-left{
+        height: 50vh;
+    }
+    .m-home-right{
+        height: 50vh;
+    }
+    .m-casts{
+        background-position: -100px 23px;
+    }
+    .casts-mb{
+        margin-bottom: 100px;
+    }
+}
+@media screen and (max-width:576px){
+    .m-info-link{
+        left: 0px;
+    }
+
+}
+@media screen and (max-width:375px){
+}
