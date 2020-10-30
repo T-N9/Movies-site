@@ -5,16 +5,42 @@
     
 }
 @media screen and (max-width:768px){
+    .m-navbar-scroll{
+        .m-fom-logo{
+            font-size: 30px;
+        }
+        .m-nav-link {
+            font-size: 18px;
+        }
+    }
     .m-home{
         background-size: 242%;
-        background-position: -675px 24px;
+        background-position: -825px 24px;
     }
     .m-info-link{
         bottom: 590px;
         left: 690px;
     }
+    .m-nav-item{
+        margin: 0;
+    }
+    .m-nav-link{
+        text-align: center;
+    }
+    .m-navbar-scroll{
+        .m-nav-item{
+            margin: 0;
+        }
+        .m-nav-link{
+            text-align: center;
+        }
+    }
     .m-home-left{
         height: 50vh;
+        justify-content: start !important;
+    }
+    .s-m-home-left{
+        margin-left: 30px;
     }
     .m-home-right{
         height: 50vh;
@@ -28,9 +54,81 @@
 }
 @media screen and (max-width:576px){
     .m-info-link{
-        left: 0px;
+        left: 360px;
+        bottom: 315px;
     }
-
+    .m-casts{
+        background-position: -195px 23px;
+    }
+    .m-home-left{
+        height: 60vh;
+    }
+    .s-m-home-left {
+        margin-left: 0px;
+    }
+    .m-home-right{
+        height: 40vh;
+    }
+    .m-home{
+        background-position: -320px 24px;
+    }
+    .m-home-img{
+        width: 60%;
+        margin-left: 160px;
+    }
+    .m-plot-img{
+        width: 100%;
+    }
+    .m-home-btn{
+        margin-top: 20px !important;
+    }
 }
 @media screen and (max-width:375px){
+    .m-home-heading {
+        font-size: 40px;
+    }
+    .m-info-link {
+        left: 327px;
+        bottom: 290px;
+    }
+    .m-home-img {
+        margin-left: 144px;
+    }
+    .p-sm-0{
+        padding: 0;
+    }
+}
+@media screen and (max-width:360px){
+    .m-home-img{
+        margin-left: 138px;
+    }
+    .m-info-link{
+        left: 312px;
+    }
+}
+@media screen and (min-height:780px){
+    .m-info-link{
+        bottom: 350px;
+    }
+}
+@media screen and (min-height:1100px){
+    .m-home{
+        background-position: 0px 110px;
+    }
+    .m-layout-ippro{
+        min-height: 50vh !important;
+    }
+    .m-casts{
+        background-position: -108px 0px;
+    }
+    .m-info-link{
+        left: 465px;
+        bottom: 20px;
+    }
+    .m-home-left{
+        height: 50vh;
+    }
+    .m-home-right{
+        height: 50vh;
+    }
 }

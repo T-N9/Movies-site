@@ -25,20 +25,20 @@
 </head>
 <body>
     <!-- Header section -->
-    <header class="container-fluid m-header">
+    <header class="container-fluid m-header animate__animated shadow-sm animate__fadeIn">
       <div class="row">
         <div class="col-12 px-0">
           <!-- Navbar section -->
           <nav class="navbar m-navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand m-fom-logo h4 m-heading-font font-weight-bold pb-0" href="#">FoM Design</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <i class="fas fa-chevron-down menu-icon iconAni"></i>
             </button>
           
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
               <ul class="navbar-nav">
-                <li class="nav-item m-nav-item active">
-                  <a class="nav-link text-uppercase m-nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item m-nav-item ">
+                  <a class="nav-link text-uppercase m-nav-link nav-active" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item m-nav-item">
                   <a class="nav-link text-uppercase m-nav-link" href="#plot">Plot</a>
@@ -63,16 +63,18 @@
     <!-- HOME Section -->
     <section id="home" class="container-fluid m-home">
       <div class="row">
-        <div class="container min-vh-100">
+        <div class="container-fluid m-layout-ippro min-vh-100">
           <div class="row">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center m-home-left">
               <div class="s-m-home-left">
                 <h1 class="text-uppercase m-home-heading m-heading-font m-fill-primary font-weight-bolder">Into the wild</h1>
-                <p class="m-motto mt-3">Happiness is real<br>only when shared.</p>
-                <span class="text-black-50 font-italic">~ Christopher McChandless</span>
-                <div class="m-home-btn shadow-sm mt-5 text-white text-uppercase m-heading-font">
-                  More
-                </div>
+                <p class="m-motto mt-3">"Happiness is only real<br>when shared."</p>
+                <span class="text-black-50 font-italic">~ Christopher McCandless</span>
+                <a href="#plot" class="anti-link">
+                  <div class="m-home-btn shadow-sm mt-5 text-white text-uppercase m-heading-font">
+                    More
+                  </div>
+                </a>
               </div>
             </div>
             <div class="col-12 col-lg-6 m-home-right d-flex justify-content-end align-items-end">
@@ -95,17 +97,17 @@
     <!-- Plot Section -->
     <Section id="plot" class="container-fluid m-plot p-5">
       <div class="row">
-        <div class="container min-vh-100 d-flex align-items-center">
+        <div class="container-fluid m-layout-ippro min-vh-100 d-flex align-items-center">
           <div class="row">
             <div class="col-12 col-lg-6">
               <div class="m-plot-left d-flex mb-3 justify-content-center">
                 <img src="assets/img/plot.jpg" class="m-plot-img shadow w" alt="">
               </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 p-sm-0">
               <div class="m-plot-right d-flex align-items-center h-100">
                 <div>
-                  <h4 class="m-heading-font m-fill-primary m-plot-heading">Plot
+                  <h4 class="m-heading-font m-fill-primary m-plot-heading mb-5">Plot
                     <i class="fas fa-film"></i>
                   </h4>
                   <p class="m-plot-para p-indent">
@@ -131,8 +133,8 @@
     <!-- Plot Section -->
     <!-- Casts Section -->
     <Section id="casts" class="container-fluid m-casts p-5">
-      <div class="row min-vh-100 p-5 d-flex align-items-center">
-        <div class="container">
+      <div class="row m-layout-ippro min-vh-100 d-flex align-items-center">
+        <div class="container-fluid container-lg">
           <div>
             <div>
               <div class="row">
@@ -210,68 +212,138 @@
                   </a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                  <a class="anti-link" href="https://en.wikipedia.org/wiki/Emile_Hirsch" target="_block">
+                  <a class="anti-link" href="http://www.carinemccandless.com/" target="_block">
                     <div class="card casts-card">
                       <div class="card-body">
                         <div class="casts-adj">
-                          <img class="m-casts-img" src="assets/img/cast1.jpg" alt="">
+                          <img class="m-casts-img" src="assets/img/cast6.jpg" alt="">
                         </div>
                         <div class="text-center text-white">
-                          <h4 class="actor-name m-heading-font mt-3">Emile Hirsch</h4>
-                          <span class="font-italic">As</span>
-                          <h4 class="character-name">Chris McCandless</h4>
+                          <h4 class="actor-name m-heading-font mt-3">Carine McCandless</h4>
                         </div>
                       </div>
                     </div>
                   </a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                  <a class="anti-link" href="https://en.wikipedia.org/wiki/Kristen_Stewart" target="_block">
+                  <a class="anti-link" href="https://en.wikipedia.org/wiki/Catherine_Keener" target="_block">
                     <div class="card casts-card">
                       <div class="card-body">
                         <div class="casts-adj">
-                          <img class="m-casts-img" src="assets/img/cast2.jpg" alt="">
+                          <img class="m-casts-img" src="assets/img/cast7.jpg" alt="">
                         </div>
                         <div class="text-center text-white">
-                          <h4 class="actor-name m-heading-font mt-3">Kristen Stewart</h4>
+                          <h4 class="actor-name m-heading-font mt-3">Catherine Keenert</h4>
                           <span class="font-italic">As</span>
-                          <h4 class="character-name">Tracy Tatro</h4>
+                          <h4 class="character-name">Jan Burres</h4>
                         </div>
                       </div>
                     </div>
                   </a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                  <a class="anti-link" href="https://en.wikipedia.org/wiki/Hal_Holbrook" target="_block">
+                  <a class="anti-link" href="https://en.wikipedia.org/wiki/Jena_Malone" target="_block">
                     <div class="card casts-card">
                       <div class="card-body">
                         <div class="casts-adj">
-                          <img class="m-casts-img" src="assets/img/cast3.jpg" alt="">
+                          <img class="m-casts-img" src="assets/img/cast8.jpg" alt="">
                         </div>
                         <div class="text-center text-white">
-                          <h4 class="actor-name m-heading-font mt-3">Hal Holbrook</h4>
+                          <h4 class="actor-name m-heading-font mt-3">Jena Malone</h4>
                           <span class="font-italic">As</span>
-                          <h4 class="character-name">Ron Franz</h4>
+                          <h4 class="character-name">Carine McCandless</h4>
                         </div>
                       </div>
                     </div>
                   </a>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3">
-                  <a class="anti-link" href="https://www.imdb.com/name/nm1619626/" target="_block">
+                  <a class="anti-link" href="https://en.wikipedia.org/wiki/Zach_Galifianakis" target="_block">
                     <div class="card casts-card">
                       <div class="card-body">
                         <div class="casts-adj">
-                          <img class="m-casts-img" src="assets/img/cast4.jpg" alt="">
+                          <img class="m-casts-img" src="assets/img/cast9.jpg" alt="">
                         </div>
                         <div class="text-center text-white">
-                          <h4 class="actor-name m-heading-font mt-3">Brian Dierker</h4>
+                          <h4 class="actor-name m-heading-font mt-3">Zach Galifianakis</h4>
                           <span class="font-italic">As</span>
-                          <h4 class="character-name">Rainey</h4>
+                          <h4 class="character-name">Kevin</h4>
                         </div>
                       </div>
                     </div>
                   </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3">
+                  <a class="anti-link" href="https://en.wikipedia.org/wiki/William_Hurt" target="_block">
+                    <div class="card casts-card">
+                      <div class="card-body">
+                        <div class="casts-adj">
+                          <img class="m-casts-img" src="assets/img/cast10.jpg" alt="">
+                        </div>
+                        <div class="text-center text-white">
+                          <h4 class="actor-name m-heading-font mt-3">William Hurt</h4>
+                          <span class="font-italic">As</span>
+                          <h4 class="character-name">Walt McCandless</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3">
+                  <a class="anti-link" href="https://en.wikipedia.org/wiki/Marcia_Gay_Harden" target="_block">
+                    <div class="card casts-card">
+                      <div class="card-body">
+                        <div class="casts-adj">
+                          <img class="m-casts-img" src="assets/img/cast11.jpg" alt="">
+                        </div>
+                        <div class="text-center text-white">
+                          <h4 class="actor-name m-heading-font mt-3">Marcia Gay Harden</h4>
+                          <span class="font-italic">As</span>
+                          <h4 class="character-name">Billie McCandless</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3">
+                  <a class="anti-link" href="https://www.imdb.com/name/nm2946106/bio" target="_block">
+                    <div class="card casts-card">
+                      <div class="card-body">
+                        <div class="casts-adj">
+                          <img class="m-casts-img" src="assets/img/cast12.jpg" alt="">
+                        </div>
+                        <div class="text-center text-white">
+                          <h4 class="actor-name m-heading-font mt-3">Jim Gallien</h4>
+                          <span class="font-italic">As</span>
+                          <h4 class="character-name">Himself</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3">
+                  <a class="anti-link" href="https://en.wikipedia.org/wiki/Vince_Vaughn" target="_block">
+                    <div class="card casts-card">
+                      <div class="card-body">
+                        <div class="casts-adj">
+                          <img class="m-casts-img" src="assets/img/cast13.jpg" alt="">
+                        </div>
+                        <div class="text-center text-white">
+                          <h4 class="actor-name m-heading-font mt-3">Vince Vaughn</h4>
+                          <span class="font-italic">As</span>
+                          <h4 class="character-name">Wayne Westerberg</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="mt-3">
+                    <a class="text-white font-weight-bold" href="https://www.google.com/search?q=into+the+wild+casts&rlz=1C1CHBD_enMM916MM916&oq=in&aqs=chrome.0.69i59l3j69i60j69i61j69i60j69i65l2.756j0j9&sourceid=chrome&ie=UTF-8" target="_blank">
+                      See full Casts<i class="fas fa-users ml-2"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -280,6 +352,7 @@
       </div>
     </Section>
     <!-- Casts Section -->
+    
 
   <!-- jQuery library -->
   <script src="dist/jquery.min.js"></script>
