@@ -5,6 +5,28 @@
     
 }
 @media screen and (max-width:768px){
+    .table-contain{
+        width: 100%;
+    }
+    .fom-credit{
+        bottom: 5px;
+    }
+    #up{
+        right: 30px;
+    }
+    .anti-padding{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .s-m-info-right{
+        width: 100%;
+    }
+    .s-m-info-left{
+        width: 100%;
+    }
+    .map{
+        width: 100%;
+    }
     .m-navbar-scroll{
         .m-fom-logo{
             font-size: 30px;
@@ -111,6 +133,11 @@
         bottom: 350px;
     }
 }
+@media screen and (min-height:1020px){
+    .m-info-link{
+        bottom: 590px;
+    }
+}
 @media screen and (min-height:1100px){
     .m-home{
         background-position: 0px 110px;
@@ -124,6 +151,9 @@
     .m-info-link{
         left: 465px;
         bottom: 20px;
+    }
+    .m-download{
+        min-height: 50vh;
     }
     .m-home-left{
         height: 50vh;

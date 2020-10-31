@@ -1,5 +1,5 @@
 let screenHeight=$(window).height();
-console.log(screenHeight);
+// console.log(screenHeight);
 
 $('.nav-link').click(function(){
     $('.navbar-collapse').removeClass('show');
@@ -16,13 +16,13 @@ $(window).scroll(function () {
     else{
         $('.m-header').removeClass('m-navbar-scroll');
         navActive('home');
-        // $("#up-link").removeClass('d-block');
-        // $("#up-link").addClass('d-none');
+        $("#up-link").removeClass('d-block');
+        $("#up-link").addClass('d-none');
     }
 });
 $('.navbar-toggler').click(function () {
     let result=$('.navbar-collapse').hasClass('show');
-    console.log(result);
+    // console.log(result);
 
     if(result){
         $('.menu-icon').removeClass('fa-chevron-up').addClass('fa-chevron-down');
@@ -33,6 +33,14 @@ $('.navbar-toggler').click(function () {
     }
 });
 
+var waypoint = new Waypoint({
+    element: document.getElementById('plot'),
+    handler: function(direction) {
+      $("#up-link").removeClass('d-none');
+      $("#up-link").addClass('d-block');
+    },
+    offset: '0px'
+});
 function navActive(current){
     $(`.nav-link`).removeClass("nav-active");
     $(`.nav-link[href='#${current}']`).addClass("nav-active");
@@ -42,14 +50,14 @@ function navScroll(){
     currentSec.waypoint(function(direction){
         if(direction=="down"){
             let currentId=$(this.element).attr('id');
-            console.log(currentId);
+            // console.log(currentId);
             navActive(currentId);
         }
     },{offset:'0px'});
     currentSec.waypoint(function(direction){
         if(direction=="up"){
             let currentId=$(this.element).attr('id');
-            console.log(currentId);
+            // console.log(currentId);
             navActive(currentId);
         }
     },{offset:'-10px'});
@@ -82,4 +90,9 @@ $(".casts_slide").slick({
             }
         }
     ]
+});
+$(window).on("load",function(){
+    $(".loader-page").fadeOut(500,function(){
+        this.remove();
+    });
 });

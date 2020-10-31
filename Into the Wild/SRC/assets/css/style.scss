@@ -12,7 +12,7 @@ html{
     overflow-x: hidden;
 }
 body{
-    height: 500vh;
+    // height: 500vh;
 }
 .m-heading-font{
     font-family: 'Commissioner', sans-serif;
@@ -96,6 +96,31 @@ body{
         transform: scale(1.03);
         // background-color: $m-soft-pc;
     }
+}
+#up{
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color:#58A78790;
+    color: $m-primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right:50px;
+    cursor: pointer;
+    animation: upShow s linear;
+}
+.up-icon{
+    box-shadow:inset 2px 2px 4px #00000080,2px 2px 4px #00000080;
+    width: 60%;
+    height: 60%;
+    @include m-flex-auto;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: $m-secondary-color;
 }
 .m-home-heading{
     font-size: 50px;
@@ -188,6 +213,104 @@ body{
         border: none !important;
     }
 }
+.m-download-heading{
+    font-size: 50px;
+}
+.m-download-left{
+    @include m-flex-auto;
+}
+.m-download-right{
+    @include m-flex-auto;
+    
+}
+.s-m-download{
+    border-radius: white;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px 0.4px #00000080;
+    width: 363px;
+    height: 411px;
+}
+.m-download{
+    background-color: $m-secondary-color;
+    min-height: 100vh;
+}
+.download-sub{
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: lighter;
+    transition: 0.5s;
+    &:hover{
+        color: $m-primary-color;
+        font-weight: normal;
+    }
+}
+.m-download-btn{
+    @include m-flex-auto;
+    width: 235px;
+    height: 45px;
+    padding: 5px 10px;
+    background-image: linear-gradient(to right, $m-soft-pc , $m-primary-color);
+    color:white;
+    font-weight: 25px;
+    // box-shadow: inset -24px -24px 47px #3a6e59, 
+    //         inset 24px 24px 47px #76e0b5;
+    border: 2px solid $m-soft-pc;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover{
+        background-image: linear-gradient(to right, $m-primary-color , $m-soft-pc);
+        transform: scale(1.03);
+    }
+}
+.m-information{
+    background-color: $m-secondary-color;
+    min-height: 150vh;
+    position: relative;
+    
+}
+.m-information::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/footer-interlaced-b-d.png);
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+.info-table{
+}
+.fom-credit{
+    position: absolute;
+    bottom: 30px;
+    background-color: #00000080;
+    border-radius: 50px;
+    right: 30px;
+    img{
+        border-radius: 5px;
+    }
+}
+.map{
+    border: 3px solid $m-soft-pc !important;
+    border-radius: 10px;
+}
+.table-contain{
+    padding: 10px;
+    background-color: #ffffff90;
+    border-radius: 10px;
+    // width: 100%;
+}
+.td-im{
+    width: 130px;
+    margin-bottom: 10px;
+}
+
 .slick-dots{
     display: flex;
     justify-content: center;

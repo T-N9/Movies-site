@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <!-- Loader Div -->
+<div class="loader-page">
+  <div class="loader">Loading...</div>
+</div>
 <html lang="en">
 <head>
   <!-- Meta Tag -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Into the Wild</title>
+  <!-- Shortcut Icon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="dist/bootstrap.min.css">
   <!-- Font Awesome CSS -->
@@ -17,10 +22,74 @@
   <link rel="stylesheet" href="dist/slick-theme.css">
   <!-- CSS File -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Shortcut Icon -->
-  <link rel="icon" href="assets/img/Favicon.ico" type="image/x-icon">
   <style>
-      /* For Loader */
+    .loader-page{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-color: #f2f6ff;
+      position: fixed;
+      z-index: 5000;
+    }
+      .loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #89d9b7;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
   </style>
 </head>
 <body>
@@ -134,7 +203,7 @@
     <!-- Casts Section -->
     <Section id="casts" class="container-fluid m-casts p-5">
       <div class="row m-layout-ippro min-vh-100 d-flex align-items-center">
-        <div class="container-fluid container-lg">
+        <div class="container anti-margin">
           <div>
             <div>
               <div class="row">
@@ -352,8 +421,178 @@
       </div>
     </Section>
     <!-- Casts Section -->
-    
-
+    <!-- Download Section -->
+    <section id="download" class="container-fluid m-download p-5">
+      <div class="row">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-12">
+              <div>
+                <h4 class="m-fill-primary text-center m-download-heading m-heading-font">Download
+                  <i class="fas fa-download"></i>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-6 mb-3 m-download-left">
+              <div class="p-3 s-m-download text-center">
+                <div>
+                  <img src="assets/img/yts.png" width="280" alt="">
+                </div>
+                <div class="p-5">
+                  <a target="_blank" class="anti-link" href="https://yts.mx/torrent/download/930E4CB6DF8AF8453851C18F0ECEAE1A9DE6A21C">
+                    <div class="m-download-btn mt-3 shadow-sm">
+                      720p.BluRay
+                    </div>
+                  </a>
+                  <a target="_blank" class="anti-link" href="https://yts.mx/torrent/download/24B49F4DB8E7F17EE3BAF9C42CF4E30E574C8E97">
+                    <div class="m-download-btn mt-3 shadow-sm">
+                      1080p.BluRay
+                    </div>
+                  </a>
+                  <div class=" mt-3 ">
+                    <a target="_blank" href="https://yifysubtitles.org/movie-imdb/tt0758758" class="m-fill-primary download-sub">
+                      Download subtitles
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 mb-3 m-download-right">
+              <div class="p-3 s-m-download text-center">
+                <div style="width:280px;height: 116px;" class="d-flex justify-content-center align-items-center">
+                  <img src="assets/img/cm.jpg" width="280" alt="">
+                </div>
+                <div class="p-5">
+                  <a target="_blank" class="anti-link" href="https://www.thecmpage.com/?r=aHR0cHM6Ly9tZWdhdXAubmV0LzF3ejY3L0ludG9fVGhlX1dpbGRfWzIwMDddXyhNTV9TdWIpLm1wNA==">
+                    <div class="m-download-btn mt-3 shadow-sm">
+                      megaup.net
+                    </div>
+                  </a>
+                  <a target="_blank" class="anti-link" href="https://www.thecmpage.com/?r=aHR0cHM6Ly9tZWdhLm56L2ZpbGUvZTU0bldDU2EjTDZ4R1lvX1lfTkZCbnZIdmgzVm80THJYWXRoa19US2RTT3hpcGZZNjRpbw==">
+                    <div class="m-download-btn mt-3 shadow-sm">
+                      mega.nz
+                    </div>
+                  </a>
+                  <div class=" mt-3 ">
+                    <a target="_blank" href="https://channelmyanmar.org/into-the-wild-2007/" class="m-fill-primary download-sub">
+                      Go to website
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Download Section -->
+    <!-- Information Section -->
+    <section id="info" class="container-fluid m-information p-5">
+      <div class="row">
+        <div class="container anti-padding">
+          <div class="row mb-5">
+            <div class="col-12">
+              <div>
+                <h4 class="m-fill-primary text-center m-download-heading m-heading-font">
+                  Information
+                  <i class="fas fa-info-circle"></i>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 px-1 col-lg-6 mb-3 m-info-left d-flex justify-content-center">
+              <div class="s-m-info-left">
+                <iframe class="map" height="650px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.1945937097207!2d-149.76925543523043!3d63.86795626183591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x56cd41b721369a7f%3A0x209175ef68ae49aa!2sThe%20Magic%20Bus!5e1!3m2!1sen!2smm!4v1604119371528!5m2!1sen!2smm" width="600" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            </div>
+            <div class="col-12 px-1 d-flex justify-content-center col-lg-6 mb-3 m-info-right">
+              <div class="s-m-info-right">
+                <div class="table-contain shadow">
+                  <table class="info-table table table-borderless">
+                    <tbody>
+                      <tr>
+                        <td class="font-weight-bold td-im">Directed by</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Sean_Penn" target="_blank">Sean Penn</a></td>
+                      </tr>
+                      <tr>
+                        <td valign="top" class="font-weight-bold">Based on</td>
+                        <td><a href="https://en.wikipedia.org/wiki/Into_the_Wild_(book)" target="_blank">Into the Wild</a>
+                          <br>by <a href="https://en.wikipedia.org/wiki/Jon_Krakauer">Jon Krakauer</a>
+                          <br><img src="assets/img/book.png" width="100px" alt="">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="font-weight-bold td-im">
+                          Genre
+                        </td>
+                        <td>
+                          Action / Adventure / Biography / Drama / Romance
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="font-weight-bold td-im">
+                          Distributed by
+                        </td>
+                        <td>
+                          <a target="_blank" href="https://en.wikipedia.org/wiki/Paramount_Vantage">Paramount Vintage</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="font-weight-bold td-im">
+                          Released date
+                        </td>
+                        <td>September 21, 2007</td>
+                      </tr>
+                      <tr>
+                        <td class="font-weight-bold td-im">
+                          Running time
+                        </td>
+                        <td>148 minutes</td>
+                      </tr>
+                      <tr>
+                        <td class="font-weight-bold td-im">
+                          Country
+                        </td>
+                        <td>United States</td>
+                      </tr>
+                      <tr>
+                        <td class="font-weight-bold td-im">
+                          Budget
+                        </td>
+                        <td>$20 million</td>
+                      </tr>
+                      <tr>
+                        <td class="font-weight-bold td-im">
+                          Box office
+                        </td>
+                        <td>$56.8 million</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fom-credit row">
+        <div class="col-12 text-center">
+          <div class="badge text-white">
+            <img src="assets/img/FoM Logo.svg" width="30" alt="">
+            FoM &copy; 2020
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Information Section -->
+    <a id="up-link" href="#home" class="d-none">
+      <div id="up" class="shadow">
+        <div class="up-icon"><i class="fas fa-angle-double-up"></i></div class="up-icon">
+      </div>
+    </a>
   <!-- jQuery library -->
   <script src="dist/jquery.min.js"></script>
   <script src="dist/jquery-migrate-1.2.1.min.js"></script>

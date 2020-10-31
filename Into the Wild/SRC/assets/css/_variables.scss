@@ -2,6 +2,12 @@ $m-primary-color:#58A787;
 $m-soft-pc:#89d9b7;
 $m-secondary-color:#f2f6ff;
 
+@mixin m-flex-auto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 $c1-1:rgb(242,246,255);
 $c8:rgb(230,184,148);
 $c2:#6c7967;
