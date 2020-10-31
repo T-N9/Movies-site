@@ -160,7 +160,7 @@ html {
   height: 40px;
   font-size: 25px;
   border-radius: 5px;
-  background-color: #58A78790;
+  background-color: rgba(242, 246, 255, 0.8);
   color: #58A787;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,25 +177,8 @@ html {
   cursor: pointer;
   -webkit-animation: upShow s linear;
           animation: upShow s linear;
-}
-
-.up-icon {
-  -webkit-box-shadow: inset 2px 2px 4px #00000080,2px 2px 4px #00000080;
-          box-shadow: inset 2px 2px 4px #00000080,2px 2px 4px #00000080;
-  width: 60%;
-  height: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 5px;
-  padding: 5px;
-  background-color: #f2f6ff;
+  -webkit-box-shadow: inset 2px 2px 4px #00000080;
+          box-shadow: inset 2px 2px 4px #00000080;
 }
 
 .m-home-heading {
@@ -576,13 +559,28 @@ html {
 @media screen and (max-width: 576px) {
   .m-info-link {
     left: 360px;
-    bottom: 315px;
+    bottom: 350px;
   }
   .m-casts {
-    background-position: -195px 23px;
+    background-position: -195px 53px;
   }
   .m-home-left {
     height: 60vh;
+  }
+  .s-m-download {
+    padding: 0 !important;
+  }
+  .m-fom-logo {
+    font-size: 20px;
+  }
+  .m-nav-link {
+    font-size: 14px;
+  }
+  .m-navbar-scroll .m-fom-logo {
+    font-size: 20px;
+  }
+  .m-navbar-scroll .m-nav-link {
+    font-size: 14px;
   }
   .s-m-home-left {
     margin-left: 0px;

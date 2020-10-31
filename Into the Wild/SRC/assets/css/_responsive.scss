@@ -77,13 +77,30 @@
 @media screen and (max-width:576px){
     .m-info-link{
         left: 360px;
-        bottom: 315px;
+        bottom: 350px;
     }
     .m-casts{
-        background-position: -195px 23px;
+        background-position: -195px 53px;
     }
     .m-home-left{
         height: 60vh;
+    }
+    .s-m-download{
+        padding: 0 !important;
+    }
+    .m-fom-logo{
+        font-size: 20px;
+    }
+    .m-nav-link {
+        font-size: 14px;
+    }
+    .m-navbar-scroll{
+        .m-fom-logo{
+            font-size: 20px;
+        }
+        .m-nav-link {
+            font-size: 14px;
+        }
     }
     .s-m-home-left {
         margin-left: 0px;

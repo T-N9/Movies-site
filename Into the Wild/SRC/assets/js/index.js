@@ -39,7 +39,7 @@ var waypoint = new Waypoint({
       $("#up-link").removeClass('d-none');
       $("#up-link").addClass('d-block');
     },
-    offset: '0px'
+    offset: '10%'
 });
 function navActive(current){
     $(`.nav-link`).removeClass("nav-active");
@@ -53,7 +53,7 @@ function navScroll(){
             // console.log(currentId);
             navActive(currentId);
         }
-    },{offset:'0px'});
+    },{offset:'100px'});
     currentSec.waypoint(function(direction){
         if(direction=="up"){
             let currentId=$(this.element).attr('id');

@@ -102,7 +102,7 @@ body{
     height: 40px;
     font-size: 25px;
     border-radius: 5px;
-    background-color:#58A78790;
+    background-color:rgba($m-secondary-color,0.8);
     color: $m-primary-color;
     display: flex;
     justify-content: center;
@@ -112,16 +112,17 @@ body{
     right:50px;
     cursor: pointer;
     animation: upShow s linear;
+    box-shadow:inset 2px 2px 4px #00000080;
 }
-.up-icon{
-    box-shadow:inset 2px 2px 4px #00000080,2px 2px 4px #00000080;
-    width: 60%;
-    height: 60%;
-    @include m-flex-auto;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: $m-secondary-color;
-}
+// .up-icon{
+//     box-shadow:inset 2px 2px 4px #00000080,2px 2px 4px #00000080;
+//     width: 60%;
+//     height: 60%;
+//     @include m-flex-auto;
+//     border-radius: 5px;
+//     padding: 5px;
+//     background-color: $m-secondary-color;
+// }
 .m-home-heading{
     font-size: 50px;
 }
