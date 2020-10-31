@@ -73,11 +73,14 @@
     .casts-mb{
         margin-bottom: 100px;
     }
+    .yts-mt{
+        margin-top: 18px;
+    }
 }
 @media screen and (max-width:576px){
     .m-info-link{
         left: 360px;
-        bottom: 350px;
+        bottom: 336px;
     }
     .m-casts{
         background-position: -195px 53px;
@@ -91,8 +94,12 @@
     .m-fom-logo{
         font-size: 20px;
     }
+    
     .m-nav-link {
         font-size: 14px;
+    }
+    .m-download-heading {
+        font-size: 45px;
     }
     .m-navbar-scroll{
         .m-fom-logo{
@@ -109,7 +116,7 @@
         height: 40vh;
     }
     .m-home{
-        background-position: -320px 24px;
+        background-position: -175px 24px;
     }
     .m-home-img{
         width: 60%;
@@ -128,7 +135,7 @@
     }
     .m-info-link {
         left: 327px;
-        bottom: 290px;
+        bottom: 315px;
     }
     .m-home-img {
         margin-left: 144px;
